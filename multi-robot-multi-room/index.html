@@ -199,16 +199,48 @@
                 <h3>
                     Multi-Robot Coordination
                 </h3>
+		<p class="text-justify">
+			For multi-robot coordination, we make the robots share the doors (saddle points) and rooms (free space decomposed into circles) as necessary information. Each robot updates the doors it has reached and circles it has completed, and publishes this information to other robots; each robot also receives information on the doors and circles that were reached by other robots.
+		</p>
 		<table align=center width="100%">
                     <tr>
                         <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="figures/multi-circles.mp4" width="100%"></video></td>
                     </tr>
                 </table>
 		<p class="text-justify">
-			For multi-robot coordination, we make the robots share the doors (saddle points) and rooms (free space decomposed into circles) as necessary information. Each robot updates the doors it has reached and circles it has completed, and publishes this information to other robots; each robot also receives information on the doors and circles that were reached by other robots. Communicating this information bidirectionally, each robot avoids targeting a door that was reached by itself and other robots. Likewise, each robot avoids targeting a circle that was visited by itself and other robots.  
+			Communicating this information bidirectionally, each robot avoids targeting a door that was reached by itself and other robots. Likewise, each robot avoids targeting a circle that was visited by itself and other robots.  
 		</p>
             </div>
         </div>
+
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<h3>
+				Qualitative Results
+			</h3>
+			<p style="text-align:center;">
+				<image src="figures/baseline-ours-compare.png" class="img-responsive" alt="scales">
+			</p>
+			<p class="text-justify">
+				Using the baseline (frontier-based exploration), robots first choose to travel corridors fast by moving straight because the goal is to simply increase the coverage. In contrary, using our methods, the robots quickly turn directions as the focus is to explore rooms. The robots first target doors and then enter each room to explore. 
+			</p>
+			<table align=center width="100%">
+                    		<tr>
+                        		<td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="figures/two-robots-sim.mp4" width="100%"></video></td>
+                    		</tr>
+                	</table>
+			<p class="text-justify">
+				Using our method, two robots simultaneously explore rooms in a building without redundancy. 
+			</p>
+			<table align=center width="100%">
+                                <tr>
+                                        <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="figures/three-robots-sim.mp4" width="100%"></video></td>
+                                </tr>
+                        </table>
+                        <p class="text-justify">
+                                Using our method, three robots simultaneously explore rooms in a building without redundancy.
+                        </p>
+			
 	
 	<div class="row">
             <div class="col-md-8 col-md-offset-2">
