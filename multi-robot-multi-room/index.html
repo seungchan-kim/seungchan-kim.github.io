@@ -240,8 +240,15 @@
                         <p class="text-justify">
                                 Using our method, three robots simultaneously explore rooms in a building without redundancy.
                         </p>
+			<p style="text-align:center;">
+				<image src="figures/robust-saddle.png" class="img-responsive" alt="scales">
+			</p>
+			<p class="text-justify">
+				Our saddle point extraction algorithm is robust at detecting doors (a) not only in normal settings, (b) but also when the axes of walls are not aligned with x-axis and y-axis of global coordinate frame. This is because the detection of saddle points (which is obtained from second-order partial derivative test from 2D Hessian matrix) can be done irrespective of the wall's alignment with the global axes. It only requires that a function (in this case, distance to the occupied cells) has a local maximum in one direction, but a local minimum in another direction. These two directions should be perpendicular each other, but they don't necessarily have to be aligned with the global axes.  
+			</p>
+		</div>
+	</div>
 			
-	
 	<div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
