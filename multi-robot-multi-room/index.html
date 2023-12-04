@@ -178,8 +178,19 @@
 	<div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Representing Rooms with Circular Decomposition
+                    Circular Decomposition of Free Space
                 </h3>
+		<p class="text-justify">
+		    We represent the free space in rooms by decomposing it into circles. Extracting local maxima and distance to the occupied cells from distance transform map, robot generates circles that are tangent to the inner walls of the rooms via our circular decomposition method.  
+		</p>
+		<table align=center width="100%">
+                    <tr>
+                        <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="figures/circles.mp4" width="100%"></video></td>
+                    </tr>
+                </table>
+		<p class="text-justify">
+		    The motivation behind this is that visiting the centers of the circles will enable the robot to observe most of the room. A circle, which is defined by a center and a radius, is also a compact representation of the space to maintain.  
+		</p>
             </div>
         </div>
 
