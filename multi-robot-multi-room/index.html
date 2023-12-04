@@ -199,6 +199,14 @@
                 <h3>
                     Multi-Robot Coordination
                 </h3>
+		<table align=center width="100%">
+                    <tr>
+                        <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="figures/multi-circles.mp4" width="100%"></video></td>
+                    </tr>
+                </table>
+		<p class="text-justify">
+			For multi-robot coordination, we make the robots share the doors (saddle points) and rooms (free space decomposed into circles) as necessary information. Each robot updates the doors it has reached and circles it has completed, and publishes this information to other robots; each robot also receives information on the doors and circles that were reached by other robots. Communicating this information bidirectionally, each robot avoids targeting a door that was reached by itself and other robots. Likewise, each robot avoids targeting a circle that was visited by itself and other robots.  
+		</p>
             </div>
         </div>
 	
