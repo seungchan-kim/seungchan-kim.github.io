@@ -155,11 +155,13 @@
                 </h3>
                 <p class="text-justify">
 			We model the doors as <em>saddle points</em> in the distance transform. 
-                <p style="text-align:center;">
-                    <image src="" class="img-responsive" alt="scales">
-                </p>
+                <table align=center width="100%">
+                    <tr>
+                        <td colspan=7><video style="vertical-align: bottom;" autoplay="autoplay" controls="controls" loop="loop" muted="" playsinline="" src="figures/door-saddle-points.mp4" width="100%"></video></td>
+                    </tr>
+                </table>
                 <p class="text-justify">
-			Description of justification using saddle points as doors. 
+			Think of a top-down view of a drone located at a door. And let's think about the distance to the closest occupied cells (which, in this case, are walls). The point at the door has the farthest distance to the occupied cells, when compared to other points that lie on the axis of wall. This point has the smallest distance to the occupied cells, when compared to other points that lie on the perpendicular axis. In the distance transform space, the door(point) is at its maximum along one axis, and at its minimum along another perpendicular axis. Thus, we can model the doors as <b>saddle points</b> in the distance transform.
 		</p>
             </div>
         </div>
