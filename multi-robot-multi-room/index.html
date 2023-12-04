@@ -131,6 +131,23 @@
 		</p>
             </div>
         </div>
+
+	<div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Perception and Data Processing
+                </h3>
+                <p class="text-justify">
+			We focus on 3D LiDAR point cloud processing approach that enables high-speed, low-compute processing onboard and robust exploration in light-degraded environments, as opposed to learning-based approaches.
+                </p>
+                <p style="text-align:center;">
+                    <image src="figures/perception-dataprocessing.png" class="img-responsive" alt="scales">
+                </p>
+                <p class="text-justify">
+			An indoor environment is composed of multiple rooms. The exploring robot generates 3D occupancy voxel grid from 3D point cloud data. The robot flattens 3D voxel grid map into 2D binary voxel grid map, and appiles median filtering. Then the robot generates 2D distance transform map. We utilize this distance transform map to extract meaningful geometric features and cues for exploration.
+                </p>
+            </div>
+        </div>
 	
 	<div class="row">
             <div class="col-md-8 col-md-offset-2">
