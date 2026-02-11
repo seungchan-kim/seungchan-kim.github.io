@@ -58,22 +58,49 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
             <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>News</heading>
-              <p>
-                <ul>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>News</heading>
+                <ul id="news-list" style="margin-bottom: 0;">
                   <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">01/2026: A paper on outdoor semantic navigation, <a href="https://raven-semantic.github.io/" target="_blank">RAVEN</a>, was accepted to ICRA 2026. See you at Vienna! </li> 
                   <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">09/2025: I started research internship at Field AI. </li> 
-                  <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">06/2025: Two papers were accpeted to IROS 2025. </li> 
-	                <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">05/2025: Attended ICRA 2025 to present <a href="https://mapex-explorer.github.io" target="_blank">MapEx</a> . Also participated in ICRA 2025 Doctoral Consortium. </li>                                                   
+                  <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">06/2025: Two papers, <a href="https://rayfronts.github.io/" target="_blank">RayFronts</a> and <a href="https://pipe-planner.github.io/" target="_blank">PIPE Planner</a>, were accepted to IROS 2025.</li>
+                  <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">05/2025: Attended ICRA 2025 to present <a href="https://mapex-explorer.github.io" target="_blank">MapEx</a>. Also participated in ICRA 2025 Doctoral Consortium. </li> 
+
+                  <div id="more-news" style="display:none;">
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">12/2024: I passed my PhD Thesis Proposal! You can watch the recording of my presentation <a href="https://youtu.be/4u9M1TVYTpU?si=y-GSfZErHpkmMfuA" target="_blank">here</a>. </li>
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">05/2024: Attended ICRA 2024 and presented my work on <a href="https://arxiv.org/pdf/2307.15202" target="_blank">multi-robot exploration</a>. </li>
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">12/2023: Survey on foundation models and robotics was released. Check out <a href="https://arxiv.org/abs/2312.08782" target="_blank">here</a>! </li>
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">11/2023: Attended CoRL 2023. Here are the <a href="https://seungchan-kim.github.io/notes/CoRL_2023_Note.pdf" target="_blank">notes</a> on the sessions that I joined.</li>
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">07/2022: Two papers on few-shot object detection were accepted at ECCV 2022 and IROS 2022. </li>
+                    <li style="list-style-position:inside;margin:0;padding:0;text-align:left;">09/2020: Started PhD in Robotics at Carnegie Mellon University! </li> 
+                  </div>
                 </ul>
-              </p>
-            </td>
-          </tr>
-        </tbody>
-        </table>     
+                
+                <div style="margin-top: 1px; margin-left: 38px;">
+                  <a href="javascript:void(0)" id="news-toggle-btn" onclick="toggleNews()" style="text-decoration: none; font-size: 0.95em; color: #1772d0; font-weight: bold;">+ Show More</a>
+                </div>
+
+                <script>
+                  function toggleNews() {
+                    var moreNews = document.getElementById("more-news");
+                    var btnText = document.getElementById("news-toggle-btn");
+
+                    if (moreNews.style.display === "none") {
+                      moreNews.style.display = "block";
+                      btnText.innerHTML = "- Show Less";
+                    } else {
+                      moreNews.style.display = "none";
+                      btnText.innerHTML = "+ Show More";
+                    }
+                  }
+                </script>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
@@ -132,7 +159,7 @@
                 <papertitle>MapExRL: Human-Inspired Indoor Exploration with Predicted Environment Context and Reinforcement Learning</papertitle>
               </a>
               <br>
-              <a href="https://www.linkedin.com/in/narek-harutyunyan-428069233/" target="_blank">Narek Harutyunyan</a>*, <a href="https://bradymoon.com/" target="_blank">Brady Moon</a>*, <strong>Seungchan Kim</strong>, <a href="https://cherieho.com/" target="_blank">Cherie Ho</a>, <a href="https://adamhung60.github.io/" target="_blank">Adam Hung</a>, <a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a>
+              <a href="https://narekharutyu.github.io/" target="_blank">Narek Harutyunyan</a>*, <a href="https://bradymoon.com/" target="_blank">Brady Moon</a>*, <strong>Seungchan Kim</strong>, <a href="https://cherieho.com/" target="_blank">Cherie Ho</a>, <a href="https://adamhung60.github.io/" target="_blank">Adam Hung</a>, <a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a>
               <em> International Conference on Advanced Robotics (ICAR) 2025 </em>
         <br> 
         <em> ICRA 2025 Workshop on Structured Learning for Efficient, Reliable, and Transparent Robots</em>
@@ -201,7 +228,7 @@
                 <papertitle>MapEx: Indoor Structure Exploration with Probabilistic Information Gain from Global Map Predictions</papertitle>
               </a>
               <br>
-              <a href="https://cherieho.com/" target="_blank">Cherie Ho</a>*, <strong>Seungchan Kim</strong>*, <a href="https://bradymoon.com/" target="_blank">Brady Moon</a>, <a href="https://www.linkedin.com/in/aditya-parandekar-ab9aa0218/" target="_blank">Aditya Parandekar</a>, <a href="https://www.linkedin.com/in/narek-harutyunyan-428069233/" target="_blank">Narek Harutyunyan</a>, <a href="https://sairlab.org/" target="_blank">Chen Wang</a>, <a href="https://www.cs.cmu.edu/~sycara/" target="_blank">Katia Sycara</a>, <a href="https://profiles.uts.edu.au/Graeme.Best" target="_blank">Graeme Best</a>, <a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a>
+              <a href="https://cherieho.com/" target="_blank">Cherie Ho</a>*, <strong>Seungchan Kim</strong>*, <a href="https://bradymoon.com/" target="_blank">Brady Moon</a>, <a href="https://www.linkedin.com/in/aditya-parandekar-ab9aa0218/" target="_blank">Aditya Parandekar</a>, <a href="https://narekharutyu.github.io/" target="_blank">Narek Harutyunyan</a>, <a href="https://sairlab.org/" target="_blank">Chen Wang</a>, <a href="https://www.cs.cmu.edu/~sycara/" target="_blank">Katia Sycara</a>, <a href="https://profiles.uts.edu.au/Graeme.Best" target="_blank">Graeme Best</a>, <a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a>
               <br>
 		(*: Equal Contributions)
 	      <br>
