@@ -101,50 +101,73 @@
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Invited Talks</heading>
-                <ul style="margin-top: 10px;">
-                  <li style="margin-bottom: 8px;">
-                    <strong>Predictive Semantic World Models for Long-Horizon Mobile Robot Autonomy</strong>
-                    <br>
-                    <span style="color: #444; padding-left: 10px; display: block;">
-                      CogAI Group @ Stanford <span style="color: #888;">(hosted by Jiajun Wu, Apr 2026)</span><br>
-                    </span>
-                  </li>
-                  <li style="margin-bottom: 8px;">
-                    <strong>Predictive Semantic Foresight for Mobile Robot Autonomy</strong>
-                    <br>
-                    <span style="color: #444; padding-left: 10px; display: block;">
-                      Kanazawa AI Research Lab @ UC Berkeley <span style="color: #888;">(hosted by Angjoo Kanazawa, Apr 2026)</span><br>
-                      Co-PI Seminar on Optimization, Control, and Learning @ UCSD <span style="color: #888;">(hosted by Nikolay Atanasov, Apr 2026)</span><br>
-                      Interactive and Trustworthy Robotics Lab @ CMU <span style="color: #888;">(hosted by Andrea Bajcsy, Apr 2026)</span>
-                    </span>
-                  </li>
+		  <tbody>
+		    <tr>
+		      <td style="padding:20px;width:100%;vertical-align:middle">
+		        <heading>Invited Talks</heading>
+		        
+		        <ul style="margin-top: 10px; margin-bottom: 0px;">
+		          <li style="margin-bottom: 8px;">
+		            <strong>3D Representations for Robotics: Geometry, Efficiency, and Semantics</strong><br>
+		            <span style="color: #444; padding-left: 10px; display: block;">
+		              Guest Lecture, CS479: Machine Learning for 3D Data @ KAIST <span style="color: #888;">(hosted by Minhyuk Sung, May 2026)</span><br>
+		            </span>
+		          </li>
+		          <li style="margin-bottom: 8px;">
+		            <strong>Predictive Semantic World Models for Long-Horizon Mobile Robot Autonomy</strong><br>
+		            <span style="color: #444; padding-left: 10px; display: block;">
+		              CogAI Group @ Stanford <span style="color: #888;">(hosted by Jiajun Wu, Apr 2026)</span><br>
+		            </span>
+		          </li>
+		          <li style="margin-bottom: 8px;">
+		            <strong>Predictive Semantic Foresight for Mobile Robot Autonomy</strong><br>
+		            <span style="color: #444; padding-left: 10px; display: block;">
+		              Kanazawa AI Research Lab @ UC Berkeley <span style="color: #888;">(hosted by Angjoo Kanazawa, Apr 2026)</span><br>
+		              Co-PI Seminar on Optimization, Control, and Learning @ UCSD <span style="color: #888;">(hosted by Nikolay Atanasov, Apr 2026)</span><br>
+		              Interactive and Trustworthy Robotics Lab @ CMU <span style="color: #888;">(hosted by Andrea Bajcsy, Apr 2026)</span>
+		            </span>
+		          </li>
+		          <li style="margin-bottom: 8px;">
+		            <strong>Predictive Mapping and Semantic Reasoning for Autonomous Mobile Robots</strong><br>
+		            <span style="color: #444; padding-left: 10px; display: block;">
+		              Scalable Spatial Intelligence Lab @ U Michigan <span style="color: #888;">(hosted by Yulun Tian, Mar 2026)</span><br>
+		              Robot Learning Seminar @ U Buffalo / Georgia Tech / Penn State <span style="color: #888;">(hosted by Chen Wang, Mar 2026)</span>
+		            </span>
+		          </li>
 
-                  <li style="margin-bottom: 8px;">
-                    <strong>Predictive Mapping and Semantic Reasoning for Autonomous Mobile Robots</strong>
-                    <br>
-                    <span style="color: #444; padding-left: 10px; display: block;">
-                      Scalable Spatial Intelligence Lab @ U Michigan <span style="color: #888;">(hosted by Yulun Tian, Mar 2026)</span><br>
-                      Robot Learning Seminar @ U Buffalo / Georgia Tech / Penn State <span style="color: #888;">(hosted by Chen Wang, Mar 2026)</span>
-                    </span>
-                  </li>
+		          <g id="more-talks" style="display:none;">
+		            <li style="margin-bottom: 8px;">
+		              <strong>Spatial Reasoning and Semantic Representations for Intelligent Multi-Robot Exploration and Navigation</strong><br>
+		              <span style="color: #444; padding-left: 10px; display: block;">
+		                Artificial Intelligence for Robot Coordination at Scale Lab @ CMU <span style="color: #888;">(hosted by Jiaoyang Li, Jul 2025)</span><br>
+		                Resilient Intelligent Systems Lab @ CMU <span style="color: #888;">(hosted by Wennie Tabib, Nov 2024)</span>
+		              </span>
+		            </li>
+		          </g>
+		        </ul>
 
-                  <li>
-                    <strong>Spatial Reasoning and Semantic Representations for Intelligent Multi-Robot Exploration and Navigation</strong>
-                    <br>
-                    <span style="color: #444; padding-left: 10px; display: block;">
-                      Artificial Intelligence for Robot Coordination at Scale Lab @ CMU <span style="color: #888;">(hosted by Jiaoyang Li, Jul 2025)</span><br>
-                      Resilient Intelligent Systems Lab @ CMU <span style="color: #888;">(hosted by Wennie Tabib, Nov 2024)</span>
-                    </span>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+		        <div style="margin-top: 4px; margin-left: 24px;">
+		          <a href="javascript:void(0)" id="talks-toggle-btn" onclick="toggleTalks()" style="text-decoration: none; font-size: 0.95em; color: #1772d0; font-weight: bold;">+ Show More</a>
+		        </div>
+
+		        <script>
+		          function toggleTalks() {
+		            var moreTalks = document.getElementById("more-talks");
+		            var btnText = document.getElementById("talks-toggle-btn");
+
+		            if (moreTalks.style.display === "none") {
+		              moreTalks.style.display = "contents"; 
+		              btnText.innerHTML = "- Show Less";
+		            } else {
+		              moreTalks.style.display = "none";
+		              btnText.innerHTML = "+ Show More";
+		            }
+		          }
+		        </script>
+		      </td>
+		    </tr>
+		  </tbody>
+		</table>
         
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -218,7 +241,7 @@
               <br>
               <strong>Seungchan Kim</strong>, <a href="https://oasisartisan.github.io" target="_blank">Omar Alama</a>, <a href="https://scholar.google.com/citations?hl=en&user=91gM0vQAAAAJ" target="_blank">Dmytro Kurdydyk</a>, <a href="https://theairlab.org/team/johnk/" target="_blank">John Keller</a>, <a href="https://nik-v9.github.io/" target="_blank">Nikhil Keetha</a>, <a href="https://theairlab.org/team/wenshan/" target="_blank">Wenshan Wang</a>, <a href="https://yonatanbisk.com/" target="_blank">Yonatan Bisk</a>, <a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a>
               <br>
-              <em> IEEE International Conference on Robotics and Automation (ICRA) 2026</em>
+              <em> IEEE International Conference on Robotics and Automation (ICRA) 2026 <font color="red"><strong>(Oral Presentation)</strong></font></em>
               <br>
               <em> IROS 2025 Active Perception Workshop, <font color="red"><strong>Best Paper Finalist (Spotlight Presentation)</strong></font> </em>
               <br>
